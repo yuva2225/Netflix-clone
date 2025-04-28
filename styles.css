@@ -1,0 +1,155 @@
+/* Importing Google font - Robot */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    background: #000;
+}
+body::before{
+    content:"";
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: url(hero-img.jpg);
+    background-position: center;
+}
+nav{
+    position: fixed;
+    z-index: 1;
+    padding: 25px 60px;
+}
+nav a img{
+    width: 160px;
+}
+.form-wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 430px;
+    padding: 60px;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.75);
+    transform: translate(-50% , -50%);
+}
+.form-wrapper h1{
+    color: #fff;
+    font-size: 2rem;
+}
+.form-wrapper form{
+    margin: 25px 0 65px;
+}
+form .form-control{
+    position: relative;
+    height: 50px;
+    margin-bottom: 16px;
+}
+.form-control input{
+    height: 100%;
+    width: 100%;
+    background: #ffffff1f;
+    outline: #fff;
+    border-color:#ffffff72;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 20px 0px 20px 0px;
+    transition: 0.2s ease;
+}
+.form-control input:hover{
+    border-color: white;
+}
+.form-control input:is(:focus, :valid) {
+    padding: 16px 20px 0;
+    
+}
+.form-control label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    color: #8c8c8c;
+    pointer-events: none;
+    font-size: 1rem;
+    transform: translateY(-50%);
+    transition: all 0.1s ease;
+}
+.form-control input:is(:focus, :valid) ~ label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
+.submit{
+    height: 100%;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    border-radius: 5px;
+    background: red;
+    border:none;
+    color:#fff;
+    font-size: 1rem;
+    font-weight:bold;
+}
+h5{
+    display: flex;
+    color: #ffffffbf;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+}
+.submit1{
+    height: 100%;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    border-radius: 5px;
+    background: #ffffff3f;
+    border:none;
+    color:#fff;
+    font-size: 1rem;
+    font-weight:bold;
+}
+.pass{
+    display: flex;
+    font-size:1rem;
+    justify-content: center;
+    padding: 20px 0px 10px 0px;
+    color:#fff;
+}
+.form-help .remember-me{
+    display: flex;
+    gap:8px;
+}
+.remember-me .remember{
+    color:#fff;
+}
+.remember-me .check{
+    border:none;
+    color:#000;
+    border-color: #fff;
+}
+.bottom{
+    margin-top: -50px;
+    color: #ffffff5e;
+    margin-bottom: 20px;
+}
+span{
+    color:#fff;
+}
+small{
+    margin-top: 10px;
+    color: #ffffff5e;
+    
+}
+.learn{
+    margin-top: 5px;
+    color: rgb(39, 163, 204);
+}
+@media screen and (max-width: 900px){
+    .form-wrapper{
+        margin-top: 20px;
+    }
+    
+}
